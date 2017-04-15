@@ -1,0 +1,24 @@
+{
+  "name": "conway-game-of-life",
+  "version": "1.0.0",
+  "description": "Conway's Game of Life implementation",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ialert/conway-game-of-life.git"
+  },
+  "keywords": [
+    "life",
+    "game",
+    "javascript",
+    "cell"
+  ],
+  "author": "Oleg Deryabin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ialert/conway-game-of-life/issues"
+  },
+  "homepage": "https://github.com/ialert/conway-game-of-life#readme"
+}
