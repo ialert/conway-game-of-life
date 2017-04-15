@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/ialert/conway-game-of-life/issues"
   },
-  "homepage": "https://github.com/ialert/conway-game-of-life#readme"
+  "homepage": "https://github.com/ialert/conway-game-of-life#readme",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
 }
