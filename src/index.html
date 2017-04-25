@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Conway's Game of Life</title>
+
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+	<div class="container">
+		<canvas style="" id="game"></canvas>
+	</div>
+	<div class="controls">
+		<div class="right-controls">
+			<label for="control-speed">Speed</label>
+			<input min="50" max="1000" step="50" value="1000" type="range" id="control-speed">
+		</div>
+		<div class="left-controls">
+			<label for="control-size">Size</label>
+			<input min="5" max="50" step="5" value="20" type="range" id="control-size">
+		</div>
+		
+	</div>
+	<script src="js/main.min.js"></script>
+</body>
+</html>
