@@ -153,6 +153,19 @@ class Area {
         }
 
         this._setAreaSize();
+
+        this._element.addEventListener('mousedown', (event) => {
+
+            let offsetLeft = this._element.offsetLeft,
+                offesetTop = this._element.offsetTop;
+
+            let y = Math.floor((event.pageX - offsetLeft) / this._options.cellSize),
+                x = Math.floor((event.pageY - offesetTop) / this._options.cellSize);
+
+            const item = new Item(x, y);
+
+            this._gameHandler.addItem(item);
+        });
     }
 
     /**
