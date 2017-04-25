@@ -93,6 +93,8 @@ class Area {
      */
     set items(cells) {
 
+        this._gameHandler.items = [];
+
         for (let cell of cells) {
 
             const item = new Item(cell[0], cell[1]);
