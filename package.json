@@ -31,5 +31,9 @@
     "gulp-rename": "^1.2.2",
     "uglifyify": "^3.0.4",
     "vinyl-source-stream": "^1.1.0"
+  },
+  "devDependencies": {
+    "gulp-environments": "^0.1.2",
+    "gulp-sourcemaps": "^2.6.0"
   }
 }

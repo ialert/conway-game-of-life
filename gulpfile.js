@@ -3,7 +3,9 @@ const gulp = require('gulp'),
     rename = require('gulp-rename'),
     es = require('event-stream'),
     minifyCss = require('gulp-minify-css'),
-    source = require('vinyl-source-stream');
+    source = require('vinyl-source-stream'),
+    sourcemaps = require('gulp-sourcemaps'),
+    environments = require('gulp-environments');
 
 const SRC_DIR = "src/";
 const BUILD_DIR = "build/";
@@ -55,7 +57,7 @@ gulp.task('js', function() {
     const tasks = userFiles.map(function(entry) {
 
         return browserify(entry, {
-                debug: false,
+                debug: environments.development(),
                 paths: ['./node_modules', SRC_DIR],
             })
             .transform("babelify", {
